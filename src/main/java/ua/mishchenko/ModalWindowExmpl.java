@@ -22,13 +22,17 @@ public class ModalWindowExmpl extends WebPage {
             }
         });
 
+         /*
         modalWindow.setTitle("ModalWindowExmpl");
+
         modalWindow.setWindowClosedCallback(new WindowClosedCallback() {
             @Override
             public void onClose(AjaxRequestTarget ajaxRequestTarget) {
 
             }
         });
+
+        /*
 
         add(new AjaxLink<String>("viewLink") {
             @Override
@@ -37,6 +41,14 @@ public class ModalWindowExmpl extends WebPage {
             }
         });
 
+        add(new AjaxLink<String>("editLink") {
+            @Override
+            public void onClick(AjaxRequestTarget ajaxRequestTarget) {
+                modalWindow.show(ajaxRequestTarget);
+            }
+        });
+
+        */
         add(modalWindow);
     }
 }
